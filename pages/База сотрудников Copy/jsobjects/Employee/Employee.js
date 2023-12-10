@@ -1,14 +1,24 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-	myFun1 () {
-		//	write code here
-		//	this.myVar1 = [1,2,3]
+	all_list: [],
+	async all_employees () {
+		get_all_employees.run().then(function (empl){
+			// Сохранение массива сотрудников в глобальное хранилище
+			storeValue("all_employees", empl);
+		});
 	},
-	async myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
-		View.setVisibility(true);
+
+	async all_employees_by_id () {
+		get_all_employees.run().then(function (empl){
+			let all_empl = empl.reduce((acc, employee) => {
+				acc[employee.id] = employee;
+				return acc;
+			}, {});
+			storeValue("all_employees", all_empl);
+
+
+		});
 	},
 	async getPositionsHierarchy() {
 		try {

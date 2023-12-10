@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "Employee.myFun1",
+    "name": "all_employees",
+    "fullyQualifiedName": "Employee.all_employees",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,8 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": false,
-    "clientSideExecution": true,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +31,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "База сотрудников Copy_Employee.myFun1",
+  "id": "База сотрудников Copy_Employee.all_employees",
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b9a373f83140ba2dbe"
+  "gitSyncId": "65758b0160fc577f16863ed2_6575f00a60fc577f16863f7a"
 }

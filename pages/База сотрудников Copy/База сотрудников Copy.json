@@ -48,6 +48,17 @@
           ],
           [
             {
+              "id": "База сотрудников Copy_Employee.all_employees",
+              "name": "Employee.all_employees",
+              "collectionId": "База сотрудников Copy_Employee",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  get_all_employees.run().then(function (empl) {\n    storeValue(\"all_employees\", empl);\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "База сотрудников Copy_Employee.getPositionsHierarchy",
               "name": "Employee.getPositionsHierarchy",
               "collectionId": "База сотрудников Copy_Employee",

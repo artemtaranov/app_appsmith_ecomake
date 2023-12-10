@@ -1,0 +1,17 @@
+SELECT 
+    e.*,
+		CONCAT(e.surname, ' ', LEFT(e.name, 1), '.', LEFT(e.patronymic, 1), '.') AS short_name,
+    p.title AS position,
+    p.parent_id,
+    manager.id AS manager_id,
+    CONCAT(manager.surname, ' ', manager.name) AS manager_full_name,
+    manager_position.title AS manager_position
+FROM 
+    employees e
+LEFT JOIN 
+    positions p ON e.position_id = p.id
+LEFT JOIN 
+    positions manager_position ON manager_position.id = p.parent_id
+LEFT JOIN 
+    employees manager ON manager.position_id = manager_position.id
+AND manager.id = (SELECT MAX(m.id) FROM employees m WHERE m.position_id = manager_position.id);

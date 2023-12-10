@@ -90,7 +90,7 @@
     "currentItemsView": "{{[]}}",
     "triggeredItemView": "{{{}}}",
     "widgetName": "widget_list_employee",
-    "listData": "{{list_employee.data}}",
+    "listData": "{{appsmith.store.all_employees}}",
     "displayName": "List",
     "bottomRow": 83,
     "parentRowSpace": 10,
