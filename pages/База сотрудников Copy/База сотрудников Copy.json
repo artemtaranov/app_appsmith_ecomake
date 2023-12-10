@@ -48,6 +48,19 @@
           ],
           [
             {
+              "id": "База сотрудников Copy_JSObject1.getEnumValuesEmployees",
+              "name": "JSObject1.getEnumValuesEmployees",
+              "collectionId": "База сотрудников Copy_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  try {\n    const res = await get_enum_list.run({\n      db: \"ecomake\"\n    });\n    console.log(res);\n    if (res && res.length > 0) {\n      JSObject1.myVar1 = res.reduce((acc, {TABLE_NAME, COLUMN_NAME, enum_values}) => {\n        let enumValues = enum_values.replace(/^enum\\('/, \"\").replace(/'\\)$/, \"\").split(\"','\");\n        if (!acc[TABLE_NAME]) {\n          acc[TABLE_NAME] = {};\n        }\n        acc[TABLE_NAME][COLUMN_NAME] = enumValues.map(value => ({\n          label: value,\n          value: value\n        }));\n        return acc;\n      }, {});\n      console.log(JSObject1.myVar1);\n      return JSObject1.myVar1;\n    } else {\n      console.error('No data received or data format is incorrect');\n      return {};\n    }\n  } catch (error) {\n    console.error('Error fetching enum values:', error);\n    return {};\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "База сотрудников Copy_list_employee",
               "name": "list_employee",
               "confirmBeforeExecute": false,

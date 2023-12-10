@@ -9,6 +9,36 @@ export default {
 		//	use async-await or promises
 		//	await storeValue('varName', 'hello world')
 	},
+	async getEnumValuesEmployees() {
+		try {
+			const res = await get_enum_list.run({db:"ecomake"});
+			console.log(res); // Проверка структуры результата
+
+			// Проверяем, что получены данные
+			if (res && res.length > 0) {
+				this.myVar1 = res.reduce((acc, {TABLE_NAME, COLUMN_NAME, enum_values}) => {
+					// Обработка строки для получения значений ENUM
+					let enumValues = enum_values.replace(/^enum\('/, "").replace(/'\)$/, "").split("','");
+
+					// Проверка и добавление значений ENUM
+					if (!acc[TABLE_NAME]) {
+						acc[TABLE_NAME] = {};
+					}
+					acc[TABLE_NAME][COLUMN_NAME] = enumValues.map(value => ({ label: value, value: value }));
+
+					return acc;
+				}, {});
+				console.log(this.myVar1); // Отладка
+				return this.myVar1;
+			} else {
+				console.error('No data received or data format is incorrect');
+				return {};
+			}
+		} catch (error) {
+			console.error('Error fetching enum values:', error);
+			return {};
+		}
+	},
 	getEmpl (data) {
 		// Объект сопоставления английских имен столбцов с русскими названиями
 		const columnNamesMapping = {

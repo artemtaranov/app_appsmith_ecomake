@@ -1,0 +1,9 @@
+SELECT 
+    TABLE_NAME,
+    COLUMN_NAME,
+    COLUMN_TYPE AS enum_values
+FROM 
+    information_schema.COLUMNS 
+WHERE 
+    TABLE_SCHEMA = {{this.params.db}} AND
+    DATA_TYPE = 'enum';
