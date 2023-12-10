@@ -1,0 +1,16 @@
+SELECT 
+    e.*,
+    p.*,
+    manager.id AS manager_id,
+    CONCAT(manager.surname, ' ', manager.name) AS manager_full_name,
+    manager_position.title AS manager_position
+FROM 
+    employees e
+LEFT JOIN 
+    positions p ON e.position_id = p.id
+LEFT JOIN 
+    positions manager_position ON manager_position.id = p.parent_id
+LEFT JOIN 
+    employees manager ON manager.position_id = manager_position.id
+WHERE 
+    e.id = {{this.params.id}};

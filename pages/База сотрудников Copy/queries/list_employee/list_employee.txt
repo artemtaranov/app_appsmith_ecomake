@@ -1,0 +1,22 @@
+SELECT 
+    e.id,
+    CONCAT(e.surname, ' ', LEFT(e.name, 1), '.', LEFT(e.patronymic, 1), '.') AS short_name,
+    p.title AS position,
+    e.employee_status,
+    e.legal_entity,
+    e.hiring_date,
+    c.telegram
+FROM 
+    employees e
+JOIN 
+    positions p ON e.position_id = p.id
+JOIN 
+    employees_contact_data c ON e.id = c.employee_id
+WHERE 
+    (e.surname LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
+    OR e.name LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
+    OR e.patronymic LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
+    OR p.title LIKE CONCAT('%', '{{search_employee_text.text}}', '%'))
+	AND   e.employee_status IN ('{{
+			status_employee.selectedOptionValues.length>0?
+			status_employee.selectedOptionValues.join('\', \'') : status_employee.options.map(item => item.value).join('\', \'') }}')

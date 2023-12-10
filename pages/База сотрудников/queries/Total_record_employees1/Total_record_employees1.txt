@@ -1,0 +1,1 @@
+SELECT COUNT(*) from employees WHERE surname LIKE '%{{Table1.searchText}}%';

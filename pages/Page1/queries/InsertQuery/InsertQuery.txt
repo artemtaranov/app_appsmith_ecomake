@@ -1,0 +1,26 @@
+INSERT INTO employees (
+	surname,
+	department_id,
+	position_id,
+	name,
+	patronymic,
+	birth_date,
+	contract_type,
+	legal_entity,
+	bank_details,
+	kpi_model,
+	documents_folder
+)
+VALUES (
+	'{{insert_form.formData.surname}}',
+	'{{insert_form.formData.department_id}}',
+	'{{insert_form.formData.position_id}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.patronymic}}',
+	'{{insert_form.formData.birth_date}}',
+	'{{insert_form.formData.contract_type}}',
+	'{{insert_form.formData.legal_entity}}',
+	'{{insert_form.formData.bank_details}}',
+	'{{insert_form.formData.kpi_model}}',
+	'{{insert_form.formData.documents_folder}}'
+);

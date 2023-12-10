@@ -1,0 +1,77 @@
+{
+  "unpublishedPage": {
+    "name": "База сотрудников Copy",
+    "slug": "copy",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 920,
+          "containerStyle": "none",
+          "snapRows": 83,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "База сотрудников Copy_get_employee",
+              "name": "get_employee",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "База сотрудников Copy_list_employee_status",
+              "name": "list_employee_status",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "База сотрудников Copy_list_employee",
+              "name": "list_employee",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "\n\t\t\tstatus_employee.selectedOptionValues.length>0?\n\t\t\tstatus_employee.selectedOptionValues.join('\\', \\'') : status_employee.options.map(item => item.value).join('\\', \\'') ",
+                "search_employee_text.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "База сотрудников Copy",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b8a373f83140ba2db3"
+}

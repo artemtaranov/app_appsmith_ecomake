@@ -1,0 +1,1 @@
+SELECT * FROM employees_sensitive_data;
