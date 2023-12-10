@@ -10,6 +10,33 @@ export default {
 		//	await storeValue('varName', 'hello world')
 		View.setVisibility(true);
 	},
+	async getPositionsHierarchy() {
+    try {
+        const res = await list_positions.run();
+        if (res && res.length > 0) {
+            // Функция для построения иерархии
+            function buildHierarchy(positions, parentId = null) {
+                return positions
+                    .filter(position => position.parent_id === parentId)
+                    .map(position => ({
+                        label: position.title,
+                        value: position.id,
+                        children: buildHierarchy(positions, position.id)
+                    }));
+            }
+
+            // Создаем иерархическую структуру
+            return buildHierarchy(res);
+        } else {
+            console.error('No data received or data format is incorrect');
+            return [];
+        }
+    } catch (error) {
+        console.error('Error fetching position hierarchy:', error);
+        return [];
+    }
+},
+
 	getIDCurrent() {
 		if (widget_list_employee.selectedItem !== undefined) {
 			storeValue("widget_list_employee_id", widget_list_employee.selectedItem.id);

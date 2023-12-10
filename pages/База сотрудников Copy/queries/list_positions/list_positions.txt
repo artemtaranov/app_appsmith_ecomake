@@ -1,0 +1,6 @@
+SELECT 
+    p.id,
+    p.title,
+    p.parent_id
+FROM 
+    positions p;
