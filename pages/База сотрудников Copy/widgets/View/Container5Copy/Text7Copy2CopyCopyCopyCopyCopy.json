@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 9,
     "widgetName": "Text7Copy2CopyCopyCopyCopyCopy",
+    "dynamicPropertyPathList": [{"key": "fontSize"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -8,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 10,
-    "bottomRow": 15,
+    "topRow": 8,
+    "bottomRow": 12,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -31,7 +32,7 @@
     "text": "Формат: <b>{{Employee.getCurrent('employment_type',\"-\")}}<\/b>",
     "key": "noo6b4396s",
     "isDeprecated": false,
-    "rightColumn": 23,
+    "rightColumn": 40,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "fvm4rq6oc8",
@@ -49,11 +50,11 @@
     "isLoading": false,
     "mobileTopRow": 5,
     "responsiveBehavior": "fill",
-    "originalTopRow": 10,
+    "originalTopRow": 9,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 15,
-    "fontSize": "0.875rem",
+    "originalBottomRow": 17,
+    "fontSize": "0.750rem",
     "minDynamicHeight": 4
 }

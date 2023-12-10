@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 13,
     "widgetName": "Text4Copy",
+    "dynamicPropertyPathList": [{"key": "fontSize"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -19,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 5.598876953125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 31,
+    "leftColumn": 46,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -28,10 +29,10 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Устроен с {{moment(currentItem.hiring_date).format(\"DD.MM.YYYY\")}}",
+    "text": "с {{moment(currentItem.hiring_date).format(\"DD.MM.YYYY\")}}",
     "key": "1zyv6gya6f",
     "isDeprecated": false,
-    "rightColumn": 48,
+    "rightColumn": 63,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "al1d3rietj",
@@ -52,6 +53,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "fontSize": "0.875rem",
+    "fontSize": "0.675rem",
     "minDynamicHeight": 4
 }

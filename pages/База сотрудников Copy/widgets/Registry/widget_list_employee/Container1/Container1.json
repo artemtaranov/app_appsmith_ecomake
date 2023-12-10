@@ -17,7 +17,7 @@
         "widgetName": "Canvas2",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 170,
+        "bottomRow": 140,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -62,6 +62,10 @@
             {"children": [{
                 "id": "ywq3fjggrj",
                 "align": "start"
+            }]},
+            {"children": [{
+                "id": "4dnft1kj5m",
+                "align": "start"
             }]}
         ]
     }],
@@ -84,10 +88,10 @@
         "parent",
         "group"
     ],
-    "bottomRow": 17,
+    "bottomRow": 14,
     "dragDisabled": true,
     "hideCard": false,
-    "shouldScrollContents": true,
+    "shouldScrollContents": false,
     "mobileRightColumn": 64,
     "dynamicTriggerPathList": [],
     "borderWidth": "1",

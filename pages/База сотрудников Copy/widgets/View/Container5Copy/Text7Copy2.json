@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 9,
     "widgetName": "Text7Copy2",
+    "dynamicPropertyPathList": [{"key": "fontSize"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -8,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 16,
-    "bottomRow": 20,
+    "topRow": 13,
+    "bottomRow": 17,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -19,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 5.5919189453125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 0,
+    "leftColumn": 26,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -31,7 +32,7 @@
     "text": "{{Employee.getCurrent('end_of_probation',false)?\"Исп.срок: <b>\"+moment(Employee.getCurrent('end_of_probation')).format(\"DD.MM.YYYY\")+\"<\/b>\":\"\"}}",
     "key": "noo6b4396s",
     "isDeprecated": false,
-    "rightColumn": 23,
+    "rightColumn": 52,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "9y052ubbnk",
@@ -49,11 +50,11 @@
     "isLoading": false,
     "mobileTopRow": 5,
     "responsiveBehavior": "fill",
-    "originalTopRow": 16,
+    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 20,
-    "fontSize": "0.875rem",
+    "originalBottomRow": 5,
+    "fontSize": "0.750rem",
     "minDynamicHeight": 4
 }

@@ -582,7 +582,7 @@
                 "boxShadow": "none",
                 "minDate": "1920-12-31T18:30:00.000Z",
                 "dateFormat": "YYYY-MM-DD",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_issue, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.date_of_issue))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
                 "accessor": "date_of_issue",
                 "shortcuts": false,
                 "convertToISO": false,

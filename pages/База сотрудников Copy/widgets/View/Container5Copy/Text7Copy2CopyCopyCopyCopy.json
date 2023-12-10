@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 9,
     "widgetName": "Text7Copy2CopyCopyCopyCopy",
+    "dynamicPropertyPathList": [{"key": "fontSize"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -8,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 4,
-    "bottomRow": 9,
+    "topRow": 8,
+    "bottomRow": 12,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -54,6 +55,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "originalBottomRow": 9,
-    "fontSize": "0.875rem",
+    "fontSize": "0.750rem",
     "minDynamicHeight": 4
 }

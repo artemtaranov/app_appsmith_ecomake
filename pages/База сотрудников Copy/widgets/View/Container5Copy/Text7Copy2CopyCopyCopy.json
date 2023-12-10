@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 9,
     "widgetName": "Text7Copy2CopyCopyCopy",
+    "dynamicPropertyPathList": [{"key": "fontSize"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -9,7 +10,7 @@
         "label"
     ],
     "topRow": 4,
-    "bottomRow": 9,
+    "bottomRow": 8,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -31,7 +32,7 @@
     "text": "ЮЛ: <b>{{Employee.getCurrent('legal_entity',\"-\")}}<\/b>",
     "key": "noo6b4396s",
     "isDeprecated": false,
-    "rightColumn": 40,
+    "rightColumn": 43,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "80uwjn6o8y",
@@ -54,6 +55,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "originalBottomRow": 9,
-    "fontSize": "0.875rem",
+    "fontSize": "0.750rem",
     "minDynamicHeight": 4
 }

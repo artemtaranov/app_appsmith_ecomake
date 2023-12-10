@@ -31,7 +31,7 @@
     "text": "{{String(currentItem.id).padStart(3, '0')}}",
     "key": "13z04mrc2i",
     "isDeprecated": false,
-    "rightColumn": 10,
+    "rightColumn": 9,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "ywq3fjggrj",

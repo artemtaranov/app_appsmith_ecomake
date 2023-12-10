@@ -32,7 +32,7 @@
     "text": "ЮЛ: {{currentItem.legal_entity}}",
     "key": "1zyv6gya6f",
     "isDeprecated": false,
-    "rightColumn": 29,
+    "rightColumn": 30,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "6s5kojb6d2",
@@ -53,6 +53,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "fontSize": "0.800rem",
+    "fontSize": "0.675rem",
     "minDynamicHeight": 4
 }
