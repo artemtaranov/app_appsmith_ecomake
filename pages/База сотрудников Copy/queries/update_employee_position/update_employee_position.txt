@@ -1,0 +1,4 @@
+UPDATE employees
+SET
+    position_id = {{this.params.position_id || get_employee.data[0].position_id}}
+WHERE id = {{this.params.id}};

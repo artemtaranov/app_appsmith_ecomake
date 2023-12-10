@@ -11,31 +11,61 @@ export default {
 		View.setVisibility(true);
 	},
 	async getPositionsHierarchy() {
-    try {
-        const res = await list_positions.run();
-        if (res && res.length > 0) {
-            // Функция для построения иерархии
-            function buildHierarchy(positions, parentId = null) {
-                return positions
-                    .filter(position => position.parent_id === parentId)
-                    .map(position => ({
-                        label: position.title,
-                        value: position.id,
-                        children: buildHierarchy(positions, position.id)
-                    }));
-            }
+		try {
+			const res = await list_positions.run();
+			if (res && res.length > 0) {
+				// Функциональное выражение для построения иерархии
+				const buildHierarchy = (positions, parentId = null) => {
+					return positions
+						.filter(position => position.parent_id === parentId)
+						.map(position => ({
+						label: position.title,
+						value: position.id,
+						children: buildHierarchy(positions, position.id)
+					}));
+				};
 
-            // Создаем иерархическую структуру
-            return buildHierarchy(res);
-        } else {
-            console.error('No data received or data format is incorrect');
-            return [];
-        }
-    } catch (error) {
-        console.error('Error fetching position hierarchy:', error);
-        return [];
-    }
-},
+				// Создаем иерархическую структуру
+				return buildHierarchy(res);
+			} else {
+				console.error('No data received or data format is incorrect');
+				return [];
+			}
+		} catch (error) {
+			console.error('Error fetching position hierarchy:', error);
+			return [];
+		}
+	},
+	updateData(){
+		let combinedObject = {
+			...JSONFormEmployees_general.formData,
+			...JSONFormEmployees_contract.formData,
+			...JSONFormEmployees_sensitive.formData,
+			...JSONFormEmployees_system.formData
+		};
+
+		// Замена всех undefined значений на пустые строки
+		Object.keys(combinedObject).forEach(key => {
+			if (combinedObject[key] === undefined) {
+				combinedObject[key] = null;
+			}
+		});
+		update_employee.run({id:get_employee.data[0].id, data: combinedObject}).then(function(){
+			get_employee.run({id:get_employee.data[0].id});
+			list_employee.run();
+			showAlert('Изменения сохранены');
+
+		});
+	},
+	updatePosition(){
+
+		update_employee_position.run({id:get_employee.data[0].id, position_id: FormEmployeePosition.selectedOptionValue }).then(function(){
+			get_employee.run({id:get_employee.data[0].id});
+			list_employee.run();
+			showAlert('Изменения сохранены');
+
+		})
+	},
 
 	getIDCurrent() {
 		if (widget_list_employee.selectedItem !== undefined) {
