@@ -381,7 +381,6 @@
                 "iconAlign": "left",
                 "position": 8,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "source_of_hire": {
@@ -403,7 +402,6 @@
                 "iconAlign": "left",
                 "position": 21,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "country_of_residence": {
@@ -523,7 +521,6 @@
                 "iconAlign": "left",
                 "position": 30,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "title": {
@@ -589,7 +586,6 @@
                 "iconAlign": "left",
                 "position": 15,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "kpi_model": {
@@ -770,7 +766,6 @@
                 "iconAlign": "left",
                 "position": 39,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "id": {
@@ -924,7 +919,6 @@
                 "iconAlign": "left",
                 "position": 25,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "telegram": {
@@ -968,7 +962,6 @@
                 "iconAlign": "left",
                 "position": 35,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "manager_position": {
@@ -1012,7 +1005,6 @@
                 "iconAlign": "left",
                 "position": 19,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "place_of_birth": {
@@ -1034,7 +1026,6 @@
                 "iconAlign": "left",
                 "position": 33,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "contract_type": {
@@ -1145,7 +1136,6 @@
                 "iconAlign": "left",
                 "position": 13,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "parent_id": {
@@ -1233,7 +1223,6 @@
                 "iconAlign": "left",
                 "position": 18,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "phone_number": {
@@ -1299,7 +1288,6 @@
                 "iconAlign": "left",
                 "position": 14,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "position_id": {
@@ -1331,16 +1319,12 @@
             "employment_type": "Полный день",
             "education": "Высшее",
             "gender": "м",
-            "bank_details": null,
-            "source_of_hire": null,
             "country_of_residence": "Россия",
             "birth_date": "1995-01-07",
             "hiring_date": "2023-01-20",
             "office": "Home-office",
-            "instagram": null,
             "title": "Операционный директор",
             "passport_series": "4614",
-            "dismissal_reason": null,
             "kpi_model": "https://docs.google.com/spreadsheets/d/1lsP447c3zsHXjGZ0EYljFuqlWp2K043bhd-h7y9fWLQ/edit?usp=drivesdk",
             "date_of_issue": "2015-02-11",
             "manager_id": 1,
@@ -1348,31 +1332,23 @@
             "tax_number": "501216002126",
             "city_of_residence": "Москва",
             "legal_entity": "ИП Федосова",
-            "social_security_number": null,
             "id": 2,
             "employee_status": "Работает",
             "telegram_id": 5828716777,
             "email": "taranov.artem@ecomake.ru",
             "issued_by": "ТП №1 ОУФМС России по Московской области по городскому округу Железнодорожный",
             "department_id": 1,
-            "address_of_residence": null,
             "telegram": "artem_taranov_coo",
-            "subdivision_code": null,
             "manager_position": "Основатель",
-            "valuable_end_product": null,
-            "place_of_birth": null,
             "contract_type": "ЧС",
             "manager_full_name": "Федосова Анастасия",
             "patronymic": "Максимович",
             "documents_folder": "https://drive.google.com/drive/folders/1I1yayaECxQH8v7pR9PxqllwLdds-mcia",
-            "end_of_probation": null,
             "parent_id": 1,
             "passport_number": "674998",
             "name": "Артем",
-            "children_info": null,
             "phone_number": "79995072764",
             "registration": "Московская область., г. Балашиха., мкр. Железнодорожный, улица Поликахина д.5., кв 430",
-            "dismissal_date": null,
             "position_id": 3
         },
         "cellBoxShadow": "none",
