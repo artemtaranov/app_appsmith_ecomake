@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Employee.getCurrent('manager_full_name')}} <br/><small>({{Employee.getCurrent('manager_position')}})<\/small>",
+    "text": "{{Employee.getCurrent('manager_full_name',\"Нет\")}} <br/><small>({{Employee.getCurrent('manager_position',\"отсутствует\")}})<\/small>",
     "key": "pbtu84rvsu",
     "isDeprecated": false,
     "rightColumn": 53,

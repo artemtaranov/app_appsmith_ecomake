@@ -122,7 +122,7 @@
     "widgetId": "53g6xu523e",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "defaultTab": "Список",
-    "onTabSelected": "{{get_employee.run({\n  \"id\": widget_list_employee.selectedItem.id\n});}}",
+    "onTabSelected": "",
     "shouldShowTabs": true,
     "minWidth": 450,
     "tabsObj": {

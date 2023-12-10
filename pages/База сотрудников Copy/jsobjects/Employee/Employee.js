@@ -6,16 +6,51 @@ export default {
 		get_all_employees.run().then(function (empl){
 			// Сохранение массива сотрудников в глобальное хранилище
 			storeValue("all_employees", empl);
-		});
-	},
 
-	async all_employees_by_id () {
-		get_all_employees.run().then(function (empl){
 			let all_empl = empl.reduce((acc, employee) => {
 				acc[employee.id] = employee;
 				return acc;
 			}, {});
-			storeValue("all_employees", all_empl);
+			storeValue("all_employees_by_id", all_empl);
+			let simplifiedEmpl = empl.map(employee => ({
+				id: employee.id,
+				short_name: employee.short_name || '',
+				surname: employee.surname || '', // Предполагая, что пустая строка является подходящим значением по умолчанию
+				name: employee.name || '',
+				patronymic: employee.patronymic || '',
+				position: employee.position || '',
+				employee_status: employee.employee_status || '',
+				legal_entity: employee.legal_entity || '',
+				contract_type: employee.contract_type || '',
+				hiring_date: employee.hiring_date || '', // Проверьте формат даты
+				telegram: employee.telegram || '' // Если это поле доступно
+			}));
+			storeValue("list_all_employees_storage", simplifiedEmpl);
+
+		});
+	},
+
+	list_all_employees(searchText = '', selectedStatuses = []) {
+		// Получение всех сотрудников
+		let empl = appsmith.store.list_all_employees_storage || [];
+
+		// Фильтрация массива сотрудников
+		let filteredEmployees = empl.filter(employee => {
+			// Проверка на соответствие тексту (если текст предоставлен)
+			let matchesText = searchText === '' || employee.surname.toLowerCase().includes(searchText.toLowerCase()) || employee.name.toLowerCase().includes(searchText.toLowerCase()) || (employee.patronymic && employee.patronymic.toLowerCase().includes(searchText.toLowerCase())) || (employee.contract_type && employee.contract_type.toLowerCase().includes(searchText.toLowerCase())) || (employee.legal_entity && employee.legal_entity.toLowerCase().includes(searchText.toLowerCase())) || (employee.position && employee.position.toLowerCase().includes(searchText.toLowerCase()));
+
+			// Проверка на соответствие статусу сотрудника (если статусы предоставлены)
+			let matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(employee.employee_status);
+
+			return matchesText && matchesStatus;
+		});
+		// Возвращение отфильтрованных сотрудников с ограниченным набором полей
+		return filteredEmployees;
+	},
+
+	async all_employees_by_id () {
+		get_all_employees.run().then(function (empl){
+
 
 
 		});
@@ -60,18 +95,17 @@ export default {
 				combinedObject[key] = null;
 			}
 		});
-		update_employee.run({id:get_employee.data[0].id, data: combinedObject}).then(function(){
-			get_employee.run({id:get_employee.data[0].id});
-			list_employee.run();
+		update_employee.run({id:Employee.getCurrent('id'), data: combinedObject}).then(function(){
+			Employee.all_employees();
 			showAlert('Изменения сохранены');
 
 		});
 	},
 	updatePosition(){
 
-		update_employee_position.run({id:get_employee.data[0].id, position_id: FormEmployeePosition.selectedOptionValue }).then(function(){
-			get_employee.run({id:get_employee.data[0].id});
-			list_employee.run();
+		update_employee_position.run({id:Employee.getCurrent('id'), position_id: FormEmployeePosition.selectedOptionValue }).then(function(){
+			Employee.all_employees();
+
 			showAlert('Изменения сохранены');
 
 		})
@@ -88,6 +122,12 @@ export default {
 		return appsmith.store.widget_list_employee_id;
 	},
 	getCurrent(field, default_text="") {
+		if(!appsmith.store.all_employees_by_id || appsmith.store.all_employees_by_id[appsmith.store.widget_list_employee_id][field]==null) return default_text;
+
+		return appsmith.store.all_employees_by_id[appsmith.store.widget_list_employee_id][field];
+
+	},
+	getCurrent_backup(field, default_text="") {
 		if (get_employee && get_employee.data && get_employee.data.length > 0 && field in get_employee.data[0]) {
 			return get_employee.data[0][field]==null?default_text:get_employee.data[0][field];
 		} else {

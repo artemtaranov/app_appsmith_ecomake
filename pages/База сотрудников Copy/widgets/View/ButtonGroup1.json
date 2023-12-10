@@ -57,7 +57,7 @@
                 }
             },
             "index": 2,
-            "label": "Еще",
+            "label": "",
             "id": "groupButton3",
             "placement": "CENTER",
             "isVisible": true,
@@ -100,7 +100,7 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton2.onClick"}
     ],
-    "leftColumn": 35,
+    "leftColumn": 40,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "groupButtons.groupButton1.buttonColor"},

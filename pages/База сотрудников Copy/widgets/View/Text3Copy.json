@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Employee.getCurrent('title')}}",
+    "text": "{{Employee.getCurrent('position')}}",
     "key": "13z04mrc2i",
     "isDeprecated": false,
     "rightColumn": 47,

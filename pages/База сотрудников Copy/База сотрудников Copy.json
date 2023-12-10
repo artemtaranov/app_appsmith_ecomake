@@ -28,16 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "База сотрудников Copy_get_employee",
-              "name": "get_employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "this.params.id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "База сотрудников Copy_list_employee_status",
               "name": "list_employee_status",
               "confirmBeforeExecute": false,
@@ -54,7 +44,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  get_all_employees.run().then(function (empl) {\n    storeValue(\"all_employees\", empl);\n  });\n}"
+                "async function () {\n  get_all_employees.run().then(function (empl) {\n    storeValue(\"all_employees\", empl);\n    let all_empl = empl.reduce((acc, employee) => {\n      acc[employee.id] = employee;\n      return acc;\n    }, {});\n    storeValue(\"all_employees_by_id\", all_empl);\n    let simplifiedEmpl = empl.map(employee => ({\n      id: employee.id,\n      short_name: employee.short_name || '',\n      surname: employee.surname || '',\n      name: employee.name || '',\n      patronymic: employee.patronymic || '',\n      position: employee.position || '',\n      employee_status: employee.employee_status || '',\n      legal_entity: employee.legal_entity || '',\n      contract_type: employee.contract_type || '',\n      hiring_date: employee.hiring_date || '',\n      telegram: employee.telegram || ''\n    }));\n    storeValue(\"list_all_employees_storage\", simplifiedEmpl);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             },

@@ -1345,7 +1345,7 @@
     "parentColumnSpace": 12.84375,
     "dynamicTriggerPathList": [{"key": "onSubmit"}],
     "borderWidth": "",
-    "sourceData": "{{get_employee.data[0]}}",
+    "sourceData": "{{appsmith.store.all_employees_by_id[appsmith.store.widget_list_employee_id]}}",
     "resetButtonLabel": "Сбросить",
     "key": "72yek3zbyj",
     "backgroundColor": "#fff",

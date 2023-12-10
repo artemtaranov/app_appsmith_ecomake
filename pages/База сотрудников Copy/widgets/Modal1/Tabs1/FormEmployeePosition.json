@@ -5,7 +5,7 @@
     "topRow": 2,
     "labelWidth": 5,
     "type": "SINGLE_SELECT_TREE_WIDGET",
-    "defaultOptionValue": "{{get_employee.data[0].position_id}}",
+    "defaultOptionValue": "{{appsmith.store.all_employees_by_id[appsmith.store.widget_list_employee_id].position_id}}",
     "animateLoading": true,
     "leftColumn": 2,
     "dynamicBindingPathList": [

@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{String(get_employee.data[0].id).padStart(3, '0')}} - {{get_employee.data[0].surname}} {{get_employee.data[0].name}} {{get_employee.data[0].patronymic}}",
+    "text": "{{String(Employee.getCurrent('id')).padStart(3, '0')}} - {{Employee.getCurrent('surname')}} {{Employee.getCurrent('name')}} {{Employee.getCurrent('patronymic')}}",
     "key": "n3wngebbwk",
     "isDeprecated": false,
     "rightColumn": 41,

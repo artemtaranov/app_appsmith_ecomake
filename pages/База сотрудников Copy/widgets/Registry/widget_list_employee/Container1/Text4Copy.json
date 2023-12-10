@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "с {{moment(currentItem.hiring_date).format(\"DD.MM.YYYY\")}}",
+    "text": "{{currentItem.hiring_date?\"с \"+moment(currentItem.hiring_date).format(\"DD.MM.YYYY\"):\"не указано\"}}",
     "key": "1zyv6gya6f",
     "isDeprecated": false,
     "rightColumn": 63,
