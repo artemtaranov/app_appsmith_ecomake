@@ -4,6 +4,7 @@ SELECT
     p.title AS position,
     e.employee_status,
     e.legal_entity,
+    e.contract_type,
     e.hiring_date,
     c.telegram
 FROM 
@@ -16,6 +17,8 @@ WHERE
     (e.surname LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
     OR e.name LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
     OR e.patronymic LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
+		OR e.contract_type LIKE CONCAT('', '{{search_employee_text.text}}', '') 
+    OR e.legal_entity LIKE CONCAT('%', '{{search_employee_text.text}}', '%') 
     OR p.title LIKE CONCAT('%', '{{search_employee_text.text}}', '%'))
 	AND   e.employee_status IN ('{{
 			status_employee.selectedOptionValues.length>0?

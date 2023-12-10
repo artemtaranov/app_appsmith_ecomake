@@ -9,7 +9,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "",
     "animateLoading": true,
-    "leftColumn": 32,
+    "leftColumn": 34,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -45,7 +45,7 @@
     "key": "f55lngvyte",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 62,
+    "rightColumn": 64,
     "widgetId": "h6imtgqv2r",
     "optionValue": "employee_status",
     "minWidth": 450,

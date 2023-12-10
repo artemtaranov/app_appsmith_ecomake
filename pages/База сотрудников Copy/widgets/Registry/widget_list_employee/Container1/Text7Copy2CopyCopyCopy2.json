@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Тип ТУ:<b> {{Employee.getCurrent('contract_type',\"-\")}}<\/b>",
+    "text": "Тип ТУ: <b>{{currentItem.contract_type}}<\/b>",
     "key": "noo6b4396s",
     "isDeprecated": false,
     "rightColumn": 45,

@@ -47,7 +47,7 @@
     "labelTextSize": "0.875rem",
     "onTextChanged": "{{list_employee.run()}}",
     "isDeprecated": false,
-    "rightColumn": 27,
+    "rightColumn": 34,
     "widgetId": "i4frjri4ae",
     "minWidth": 450,
     "label": "Поиск по всем полям",

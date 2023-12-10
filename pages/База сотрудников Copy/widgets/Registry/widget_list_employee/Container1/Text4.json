@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "ЮЛ: {{currentItem.legal_entity}}",
+    "text": "ЮЛ: <b>{{currentItem.legal_entity}}<\/b>",
     "key": "1zyv6gya6f",
     "isDeprecated": false,
     "rightColumn": 30,
