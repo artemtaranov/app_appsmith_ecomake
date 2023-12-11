@@ -20,42 +20,20 @@
             "iconName": "more",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
-            "menuItems": {
-                "menuItem1": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 0,
-                    "label": "First Option",
-                    "id": "menuItem1",
-                    "isVisible": true,
-                    "isDisabled": false
-                },
-                "menuItem3": {
-                    "backgroundColor": "#DD4B34",
-                    "onClick": "",
-                    "iconName": "cross",
-                    "widgetId": "",
-                    "iconColor": "#FFFFFF",
-                    "iconAlign": "right",
-                    "index": 2,
-                    "label": "Уволить",
-                    "id": "menuItem3",
-                    "isVisible": true,
-                    "isDisabled": false,
-                    "textColor": "#FFFFFF"
-                },
-                "menuItem2": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 1,
-                    "label": "Second Option",
-                    "id": "menuItem2",
-                    "isVisible": true,
-                    "isDisabled": false
-                }
-            },
+            "menuItems": {"menuItem3": {
+                "backgroundColor": "#DD4B34",
+                "onClick": "",
+                "iconName": "cross",
+                "widgetId": "",
+                "iconColor": "#FFFFFF",
+                "iconAlign": "right",
+                "index": 0,
+                "label": "Уволить",
+                "id": "menuItem3",
+                "isVisible": true,
+                "isDisabled": false,
+                "textColor": "#FFFFFF"
+            }},
             "index": 2,
             "label": "",
             "id": "groupButton3",
@@ -98,7 +76,8 @@
     "parentColumnSpace": 15.765625,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"}
     ],
     "leftColumn": 40,
     "dynamicBindingPathList": [

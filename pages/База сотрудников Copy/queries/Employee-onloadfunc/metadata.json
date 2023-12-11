@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "updatePosition",
-    "fullyQualifiedName": "Employee.updatePosition",
+    "name": "onloadfunc",
+    "fullyQualifiedName": "Employee.onloadfunc",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,12 +31,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "База сотрудников Copy_Employee.updatePosition",
+  "id": "База сотрудников Copy_Employee.onloadfunc",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_6576b1e860fc577f16863fae"
+  "gitSyncId": "65758b0160fc577f16863ed2_6576b1e860fc577f16863fad"
 }

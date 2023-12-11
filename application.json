@@ -5,10 +5,6 @@
       "isDefault": true
     },
     {
-      "id": "База сотрудников",
-      "isDefault": false
-    },
-    {
       "id": "База сотрудников Copy",
       "isDefault": false
     }

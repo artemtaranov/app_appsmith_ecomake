@@ -30,10 +30,10 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Серия и номер: <b>{{Employee.getCurrent('passport_series')}} {{Employee.getCurrent('passport_number')}}<\/b>",
+    "text": "Серия и номер: <br><b>{{Employee.getCurrent('passport_series')}} {{Employee.getCurrent('passport_number')}}<\/b>",
     "key": "noo6b4396s",
     "isDeprecated": false,
-    "rightColumn": 35,
+    "rightColumn": 29,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "8fc5t4b2z5",
@@ -55,7 +55,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 8,
+    "originalBottomRow": 9,
     "fontSize": "0.875rem",
     "minDynamicHeight": 4
 }

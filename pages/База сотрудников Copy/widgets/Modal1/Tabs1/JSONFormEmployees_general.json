@@ -404,7 +404,7 @@
                 "isRequired": false,
                 "isCustomField": false,
                 "dateFormat": "YYYY-MM-DD",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.birth_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DD\")))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.birth_date))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
                 "dataType": "string",
                 "accessor": "birth_date",

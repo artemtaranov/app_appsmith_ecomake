@@ -2,6 +2,22 @@ export default {
 	myVar1: [],
 	myVar2: {},
 	all_list: [],
+	onloadfunc(){
+		this.all_employees();
+		this.getPositionsHierarchy();
+		this.getIDCurrent(); 
+	},
+	getValueOrDefault(fieldName, params) {
+		// Проверяем, существует ли params и params.data
+		if (params && params.data) {
+			// Проверяем, существует ли поле и не является ли оно пустой строкой
+			if (fieldName in params.data && params.data[fieldName] !== '') {
+				return params.data[fieldName];
+			}
+		}
+		// Возвращаем значение по умолчанию, если поле отсутствует или содержит пустую строку
+		return Employee.getCurrent(fieldName, null);
+	},
 	async all_employees () {
 		get_all_employees.run().then(function (empl){
 			// Сохранение массива сотрудников в глобальное хранилище
@@ -37,7 +53,7 @@ export default {
 		// Фильтрация массива сотрудников
 		let filteredEmployees = empl.filter(employee => {
 			// Проверка на соответствие тексту (если текст предоставлен)
-			let matchesText = searchText === '' || employee.surname.toLowerCase().includes(searchText.toLowerCase()) || employee.name.toLowerCase().includes(searchText.toLowerCase()) || (employee.patronymic && employee.patronymic.toLowerCase().includes(searchText.toLowerCase())) || (employee.contract_type && employee.contract_type.toLowerCase().includes(searchText.toLowerCase())) || (employee.legal_entity && employee.legal_entity.toLowerCase().includes(searchText.toLowerCase())) || (employee.position && employee.position.toLowerCase().includes(searchText.toLowerCase()));
+			let matchesText = searchText === '' || employee.id.toString().includes(searchText.toLowerCase()) || employee.surname.toLowerCase().includes(searchText.toLowerCase())||  employee.name.toLowerCase().includes(searchText.toLowerCase()) || (employee.patronymic && employee.patronymic.toLowerCase().includes(searchText.toLowerCase())) || (employee.contract_type && employee.contract_type.toLowerCase().includes(searchText.toLowerCase())) || (employee.legal_entity && employee.legal_entity.toLowerCase().includes(searchText.toLowerCase())) || (employee.position && employee.position.toLowerCase().includes(searchText.toLowerCase()));
 
 			// Проверка на соответствие статусу сотрудника (если статусы предоставлены)
 			let matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(employee.employee_status);
@@ -91,10 +107,11 @@ export default {
 
 		// Замена всех undefined значений на пустые строки
 		Object.keys(combinedObject).forEach(key => {
-			if (combinedObject[key] === undefined) {
+			if (combinedObject[key] === undefined || combinedObject[key] === '') {
 				combinedObject[key] = null;
 			}
 		});
+		console.log(combinedObject);
 		update_employee.run({id:Employee.getCurrent('id'), data: combinedObject}).then(function(){
 			Employee.all_employees();
 			showAlert('Изменения сохранены');
@@ -113,10 +130,13 @@ export default {
 
 	getIDCurrent() {
 		if (widget_list_employee.selectedItem !== undefined) {
-			storeValue("widget_list_employee_id", widget_list_employee.selectedItem.id);
+			storeValue("widget_list_employee_id", widget_list_employee.selectedItem.id, true);
 			return widget_list_employee.selectedItem.id;
 		}
+
 		if (appsmith.store.widget_list_employee_id === undefined) {
+			storeValue("widget_list_employee_id", 2);
+
 			return 2;
 		}
 		return appsmith.store.widget_list_employee_id;

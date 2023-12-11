@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1000,
+          "bottomRow": 910,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -38,28 +38,6 @@
           ],
           [
             {
-              "id": "База сотрудников Copy_Employee.all_employees",
-              "name": "Employee.all_employees",
-              "collectionId": "База сотрудников Copy_Employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  get_all_employees.run().then(function (empl) {\n    storeValue(\"all_employees\", empl);\n    let all_empl = empl.reduce((acc, employee) => {\n      acc[employee.id] = employee;\n      return acc;\n    }, {});\n    storeValue(\"all_employees_by_id\", all_empl);\n    let simplifiedEmpl = empl.map(employee => ({\n      id: employee.id,\n      short_name: employee.short_name || '',\n      surname: employee.surname || '',\n      name: employee.name || '',\n      patronymic: employee.patronymic || '',\n      position: employee.position || '',\n      employee_status: employee.employee_status || '',\n      legal_entity: employee.legal_entity || '',\n      contract_type: employee.contract_type || '',\n      hiring_date: employee.hiring_date || '',\n      telegram: employee.telegram || ''\n    }));\n    storeValue(\"list_all_employees_storage\", simplifiedEmpl);\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "База сотрудников Copy_Employee.getPositionsHierarchy",
-              "name": "Employee.getPositionsHierarchy",
-              "collectionId": "База сотрудников Copy_Employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  try {\n    const res = await list_positions.run();\n    if (res && res.length > 0) {\n      const buildHierarchy = (positions, parentId = null) => {\n        return positions.filter(position => position.parent_id === parentId).map(position => ({\n          label: position.title,\n          value: position.id,\n          children: buildHierarchy(positions, position.id)\n        }));\n      };\n      return buildHierarchy(res);\n    } else {\n      console.error('No data received or data format is incorrect');\n      return [];\n    }\n  } catch (error) {\n    console.error('Error fetching position hierarchy:', error);\n    return [];\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "База сотрудников Copy_JSObject1.getEnumValuesEmployees",
               "name": "JSObject1.getEnumValuesEmployees",
               "collectionId": "База сотрудников Copy_JSObject1",
@@ -73,13 +51,13 @@
           ],
           [
             {
-              "id": "База сотрудников Copy_list_employee",
-              "name": "list_employee",
+              "id": "База сотрудников Copy_Employee.onloadfunc",
+              "name": "Employee.onloadfunc",
+              "collectionId": "База сотрудников Copy_Employee",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "JS",
               "jsonPathKeys": [
-                "\n\t\t\tstatus_employee.selectedOptionValues.length>0?\n\t\t\tstatus_employee.selectedOptionValues.join('\\', \\'') : status_employee.options.map(item => item.value).join('\\', \\'') ",
-                "search_employee_text.text"
+                "function () {\n  Employee.all_employees();\n  Employee.getPositionsHierarchy();\n  Employee.getIDCurrent();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
