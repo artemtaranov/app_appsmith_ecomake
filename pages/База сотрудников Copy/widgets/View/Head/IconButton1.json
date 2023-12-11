@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 8,
     "widgetName": "IconButton1",
-    "onClick": "{{get_employee.run({\n  \"id\": Employee.getCurrent('manager_id')\n});}}",
+    "onClick": "{{navigateTo('База сотрудников Copy', {\n  \"id\": Employee.getCurrent('manager_id')\n}, 'SAME_WINDOW').then(() => {});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Icon button",
     "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
