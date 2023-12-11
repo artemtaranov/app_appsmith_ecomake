@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "Employee",
+    "pageId": "База сотрудников",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      },
+      {
+        "name": "all_list",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "База сотрудников_Employee",
+  "deleted": false,
+  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b9a373f83140ba2dd3"
+}
