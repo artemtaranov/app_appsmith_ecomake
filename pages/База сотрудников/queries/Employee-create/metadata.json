@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "updatePosition",
-    "fullyQualifiedName": "Employee.updatePosition",
+    "name": "create",
+    "fullyQualifiedName": "Employee.create",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -20,7 +20,11 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": []
+      "jsArguments": [
+        {
+          "name": "base"
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -36,7 +40,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "База сотрудников_Employee.updatePosition",
+  "id": "База сотрудников_Employee.create",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657718c94ff2c979753d2dde"
+  "gitSyncId": "65758b0160fc577f16863ed2_6577187d4ff2c979753d2dd5"
 }

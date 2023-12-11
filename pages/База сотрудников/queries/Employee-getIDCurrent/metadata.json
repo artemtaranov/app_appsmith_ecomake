@@ -16,7 +16,7 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -38,5 +38,5 @@
   },
   "id": "База сотрудников_Employee.getIDCurrent",
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6574a79460fc577f16863ec6"
+  "gitSyncId": "65758b0160fc577f16863ed2_6577191d4ff2c979753d2de7"
 }

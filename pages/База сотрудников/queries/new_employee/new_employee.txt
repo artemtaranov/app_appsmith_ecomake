@@ -1,0 +1,2 @@
+INSERT INTO employees (name, surname, patronymic)
+VALUES ({{this.params.name}},{{this.params.surname}}, {{this.params.patronymic}});

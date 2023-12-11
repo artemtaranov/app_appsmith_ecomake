@@ -7,6 +7,12 @@ export default {
 		this.getPositionsHierarchy();
 		this.getIDCurrent(); 
 	},
+
+	create(baseFields){ 
+		console.log(baseFields);
+
+	},
+
 	getValueOrDefault(fieldName, params) {
 		// Проверяем, существует ли params и params.data
 		if (params && params.data) {
@@ -71,7 +77,7 @@ export default {
 
 		});
 	},
-	async getPositionsHierarchy() {
+	async getPositionsHierarchy() { 
 		try {
 			const res = await list_positions.run();
 			if (res && res.length > 0) {
@@ -111,7 +117,6 @@ export default {
 				combinedObject[key] = null;
 			}
 		});
-		console.log(combinedObject);
 		update_employee.run({id:Employee.getCurrent('id'), data: combinedObject}).then(function(){
 			Employee.all_employees();
 			showAlert('Изменения сохранены');

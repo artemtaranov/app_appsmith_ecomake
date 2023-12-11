@@ -16,7 +16,7 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -42,5 +42,5 @@
   },
   "id": "База сотрудников_Employee.getColorByStatus",
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b9a373f83140ba2dcc"
+  "gitSyncId": "65758b0160fc577f16863ed2_657718894ff2c979753d2ddb"
 }
