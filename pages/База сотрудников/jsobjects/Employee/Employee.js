@@ -10,7 +10,6 @@ export default {
 
 	create(baseFields){ 
 		console.log(baseFields);
-
 	},
 
 	getValueOrDefault(fieldName, params) {
