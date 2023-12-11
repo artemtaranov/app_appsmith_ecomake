@@ -8,7 +8,7 @@ export default {
 		this.getIDCurrent(); 
 	},
 
-	create(baseFields){ 
+	createEmpl(baseFields){ 
 		console.log(baseFields);
 	},
 
@@ -69,13 +69,6 @@ export default {
 		return filteredEmployees;
 	},
 
-	async all_employees_by_id () {
-		get_all_employees.run().then(function (empl){
-
-
-
-		});
-	},
 	async getPositionsHierarchy() { 
 		try {
 			const res = await list_positions.run();
