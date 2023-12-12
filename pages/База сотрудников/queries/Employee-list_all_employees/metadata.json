@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCurrent",
-    "fullyQualifiedName": "Employee.getCurrent",
+    "name": "list_all_employees",
+    "fullyQualifiedName": "Employee.list_all_employees",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,10 +22,10 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "field"
+          "name": "searchText"
         },
         {
-          "name": "default_text"
+          "name": "selectedStatuses"
         }
       ]
     },
@@ -44,7 +44,7 @@
     "userPermissions": [],
     "createdAt": "2023-12-11T14:49:09Z"
   },
-  "id": "База сотрудников_Employee.getCurrent",
+  "id": "База сотрудников_Employee.list_all_employees",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a972c"
+  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a9725"
 }

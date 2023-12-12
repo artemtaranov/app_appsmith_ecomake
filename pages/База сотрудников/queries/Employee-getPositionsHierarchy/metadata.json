@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T14:12:43Z"
+    "createdAt": "2023-12-11T14:49:09Z"
   },
   "id": "База сотрудников_Employee.getPositionsHierarchy",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657718db4ff2c979753d2de0"
+  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a9729"
 }

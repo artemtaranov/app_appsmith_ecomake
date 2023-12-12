@@ -16,13 +16,13 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,12 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-11T14:49:09Z"
   },
   "id": "База сотрудников_Employee.onloadfunc",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65771f4c4ff2c979753d2de9"
+  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a9726"
 }

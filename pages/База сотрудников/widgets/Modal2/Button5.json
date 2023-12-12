@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button5",
-    "onClick": "",
+    "onClick": "{{Employee.createEmpl(form_new_employee_name.text, form_new_employee_surname.text, form_new_employee_patronymic.text, FormEmployeePositionCopy.selectedOptionValue);}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",

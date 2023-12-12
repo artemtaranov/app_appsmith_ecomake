@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO employees (name, surname, patronymic)\nVALUES ({{this.params.name}},{{this.params.surname}}, {{this.params.patronymic}});",
+      "body": "INSERT INTO employees (name, surname, patronymic, position_id)\nVALUES ({{this.params.name}},{{this.params.surname}}, {{this.params.patronymic}}, {{parseInt(this.params.position_id)}});\nSELECT LAST_INSERT_ID() as last_id;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,6 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "parseInt(this.params.position_id)",
       "this.params.name",
       "this.params.patronymic",
       "this.params.surname"

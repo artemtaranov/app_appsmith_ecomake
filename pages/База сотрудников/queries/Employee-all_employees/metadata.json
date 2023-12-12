@@ -16,7 +16,7 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -34,9 +34,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-11T14:49:08Z"
   },
   "id": "База сотрудников_Employee.all_employees",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65771f804ff2c979753d2ded"
+  "gitSyncId": "65758b0160fc577f16863ed2_65772164ee3ed465f02a971e"
 }

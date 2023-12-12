@@ -8,8 +8,18 @@ export default {
 		this.getIDCurrent(); 
 	},
 
-	createEmpl(baseFields){ 
-		console.log(baseFields);
+	createEmpl(name, surname, patronymic, position_id){ 
+		console.log(name, surname, patronymic, position_id);
+		console.log(new_employee.run({name: name, surname:surname, patronymic:patronymic, position_id:position_id}).then(function(res){
+
+			storeValue("widget_list_employee_id", res[0].last_id, true).then(function(){
+						this.all_employees().then(function(){
+							
+						});
+
+			});
+
+		}));
 	},
 
 	getValueOrDefault(fieldName, params) {

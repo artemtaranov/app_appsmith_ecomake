@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCurrent",
-    "fullyQualifiedName": "Employee.getCurrent",
+    "name": "getCurrent_backup",
+    "fullyQualifiedName": "Employee.getCurrent_backup",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -42,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T14:49:09Z"
+    "createdAt": "2023-12-11T14:49:08Z"
   },
-  "id": "База сотрудников_Employee.getCurrent",
+  "id": "База сотрудников_Employee.getCurrent_backup",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a972c"
+  "gitSyncId": "65758b0160fc577f16863ed2_65772164ee3ed465f02a9723"
 }
