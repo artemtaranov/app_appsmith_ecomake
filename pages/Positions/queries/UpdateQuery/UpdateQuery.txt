@@ -1,0 +1,5 @@
+UPDATE positions SET
+		title = '{{update_form.fieldState.title.isVisible ? update_form.formData.title : update_form.sourceData.title}}',
+		department_id = '{{update_form.fieldState.department_id.isVisible ? update_form.formData.department_id : update_form.sourceData.department_id}}',
+    parent_id = '{{update_form.fieldState.parent_id.isVisible ? update_form.formData.parent_id : update_form.sourceData.parent_id}}'
+WHERE id = {{data_table.selectedRow.id}};

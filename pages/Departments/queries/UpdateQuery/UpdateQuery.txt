@@ -1,0 +1,5 @@
+UPDATE departments SET
+		name = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		category = '{{update_form.fieldState.category.isVisible ? update_form.formData.category : update_form.sourceData.category}}',
+    parent_id = '{{update_form.fieldState.parent_id.isVisible ? update_form.formData.parent_id : update_form.sourceData.parent_id}}'
+WHERE id = {{data_table.selectedRow.id}};

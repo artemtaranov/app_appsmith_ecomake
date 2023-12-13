@@ -1,0 +1,8 @@
+INSERT INTO positions (
+	title,
+	department_id,
+	parent_id)
+VALUES (
+	'{{insert_form.formData.title}}',
+	'{{insert_form.formData.department_id}}',
+	'{{insert_form.formData.parent_id}}');

@@ -7,6 +7,14 @@
     {
       "id": "База сотрудников",
       "isDefault": false
+    },
+    {
+      "id": "Departments",
+      "isDefault": false
+    },
+    {
+      "id": "Positions",
+      "isDefault": false
     }
   ],
   "viewMode": false,

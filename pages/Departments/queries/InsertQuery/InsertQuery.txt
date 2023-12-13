@@ -1,0 +1,8 @@
+INSERT INTO departments (
+	name,
+	category,
+	parent_id)
+VALUES (
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.category}}',
+	'{{insert_form.formData.parent_id}}');
