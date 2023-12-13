@@ -28,6 +28,7 @@ export default {
 
 					return acc;
 				}, {});
+				console.log(this.myVar1); // Отладка
 				return this.myVar1;
 			} else {
 				console.error('No data received or data format is incorrect');

@@ -7,8 +7,8 @@
     "displayName": "Stats Box",
     "iconSVG": "/static/media/icon.182a90a0c52d97288bf067cc9c4186d4.svg",
     "searchTags": ["statbox"],
-    "topRow": 30,
-    "bottomRow": 44,
+    "topRow": 1,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "type": "STATBOX_WIDGET",
     "hideCard": false,
@@ -16,7 +16,7 @@
     "mobileRightColumn": 22,
     "animateLoading": true,
     "parentColumnSpace": 17.9375,
-    "leftColumn": 2,
+    "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "boxShadow"}
@@ -67,7 +67,7 @@
     "key": "b3q9dzygim",
     "backgroundColor": "white",
     "isDeprecated": false,
-    "rightColumn": 24,
+    "rightColumn": 23,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "ves1foklv2",
     "isVisible": true,
@@ -77,10 +77,10 @@
     "isLoading": false,
     "mobileTopRow": 28,
     "responsiveBehavior": "fill",
-    "originalTopRow": 30,
+    "originalTopRow": 1,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 44,
+    "originalBottomRow": 15,
     "minDynamicHeight": 14
 }

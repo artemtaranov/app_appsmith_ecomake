@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getPositionsHierarchy",
-    "fullyQualifiedName": "Employee.getPositionsHierarchy",
+    "name": "updateOrgChart",
+    "fullyQualifiedName": "Employee.updateOrgChart",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,15 +14,15 @@
       "userPermissions": []
     },
     "pageId": "База сотрудников",
-    "collectionId": "65758b0160fc577f16863efc",
+    "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,10 +34,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-11T14:12:43Z"
+    "userPermissions": []
   },
-  "id": "База сотрудников_Employee.getPositionsHierarchy",
+  "id": "База сотрудников_Employee.updateOrgChart",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657718db4ff2c979753d2de0"
+  "gitSyncId": "65758b0160fc577f16863ed2_6579b1952d232541f757c38a"
 }

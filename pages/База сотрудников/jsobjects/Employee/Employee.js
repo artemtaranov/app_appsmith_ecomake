@@ -13,9 +13,9 @@ export default {
 		console.log(new_employee.run({name: name, surname:surname, patronymic:patronymic, position_id:position_id}).then(function(res){
 
 			storeValue("widget_list_employee_id", res[0].last_id, true).then(function(){
-						this.all_employees().then(function(){
-							
-						});
+				this.all_employees().then(function(){
+
+				});
 
 			});
 
@@ -174,6 +174,29 @@ export default {
 				return '#be185d';
 			default:
 				return '';
+		}
+	}, 
+	async updateOrgChart() {
+		const webhookUrl = 'https://n8n.artemtaranov.ru/webhook/c0cecb6e-6b2c-4d7d-96c3-97873fb87cc7';
+
+		try {
+			const response = await fetch(webhookUrl, {
+				method: 'GET', // или 'GET', в зависимости от того, как настроен ваш вебхук
+				headers: {
+					'Content-Type': 'application/json',
+					// Добавьте другие необходимые заголовки, если они требуются
+				} 
+			});
+
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
+			}
+
+			const data = await response.json();
+			console.log('Response from webhook:', data);
+			// Обработайте полученные данные
+		} catch (error) {
+			console.error('Error calling webhook:', error);
 		}
 	}
 

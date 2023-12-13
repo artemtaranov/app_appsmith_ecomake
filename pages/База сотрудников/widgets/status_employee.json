@@ -57,6 +57,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 14,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{list_employee.run()}}",
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

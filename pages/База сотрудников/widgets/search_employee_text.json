@@ -45,7 +45,7 @@
     "labelPosition": "Top",
     "key": "vncbm3xqax",
     "labelTextSize": "0.875rem",
-    "onTextChanged": "{{list_employee.run()}}",
+    "onTextChanged": "",
     "isDeprecated": false,
     "rightColumn": 11,
     "widgetId": "i4frjri4ae",
