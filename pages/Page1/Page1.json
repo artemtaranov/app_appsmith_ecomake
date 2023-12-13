@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 1040,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -26,7 +26,22 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Stats.employeeStatus",
+              "name": "Stats.employeeStatus",
+              "collectionId": "Page1_Stats",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function (status = null) {\n  if (appsmith.store.employee_status && appsmith.store.employee_status[status]) {\n    return appsmith.store.employee_status[status];\n  } else {\n    try {\n      const result = await status_employee.run();\n      storeValue('employee_status', result);\n      return result[status] || 0;\n    } catch (error) {\n      console.error('Error in employeeStatus:', error);\n      return 0;\n    }\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",

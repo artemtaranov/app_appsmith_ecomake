@@ -1,0 +1,7 @@
+SELECT 'Работает' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Работает'
+UNION
+SELECT 'Уволен' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Уволен'
+UNION
+SELECT 'Увольняется' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Увольняется'
+UNION
+SELECT 'Исп. срок' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Исп. срок';

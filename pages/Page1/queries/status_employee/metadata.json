@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "list_employee_status",
+    "name": "status_employee",
     "datasource": {
       "name": "Mariadb Ecomake",
       "pluginId": "mysql-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "База сотрудников",
+    "pageId": "Page1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT DISTINCT employee_status FROM employees;",
+      "body": "SELECT 'Работает' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Работает'\nUNION\nSELECT 'Уволен' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Уволен'\nUNION\nSELECT 'Увольняется' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Увольняется'\nUNION\nSELECT 'Исп. срок' AS status, COUNT(*) AS counter FROM employees WHERE employee_status = 'Исп. срок';\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-10T09:55:13Z"
+    "createdAt": "2023-12-12T13:30:08Z"
   },
-  "id": "База сотрудников_list_employee_status",
+  "id": "Page1_status_employee",
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b9a373f83140ba2dbf"
+  "gitSyncId": "65758b0160fc577f16863ed2_65786060ee3ed465f02a9735"
 }

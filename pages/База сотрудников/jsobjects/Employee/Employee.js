@@ -4,6 +4,7 @@ export default {
 	all_list: [],
 	onloadfunc(){
 		this.all_employees();
+
 		this.getPositionsHierarchy();
 		this.getIDCurrent(); 
 	},
@@ -79,7 +80,7 @@ export default {
 		return filteredEmployees;
 	},
 
-	async getPositionsHierarchy() { 
+	async getPositionsHierarchy () { 
 		try {
 			const res = await list_positions.run();
 			if (res && res.length > 0) {
@@ -200,4 +201,4 @@ export default {
 		}
 	}
 
-}
+} 

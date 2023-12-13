@@ -1364,7 +1364,7 @@
         {"key": "schema.__root_schema__.children.dismissal_date.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 97,
+    "bottomRow": 5,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "",
