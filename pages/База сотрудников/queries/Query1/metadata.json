@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
+      "body": "SELECT COLUMN_NAME AS 'Field', COLUMN_COMMENT AS 'Comment'\nFROM INFORMATION_SCHEMA.COLUMNS\nWHERE TABLE_SCHEMA = 'ecomake' AND TABLE_NAME = 'employees_sensitive_data';\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
