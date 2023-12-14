@@ -1,0 +1,14 @@
+SELECT
+    d.name AS 'Название отдела',
+    p.title AS 'Название должности',
+    CASE
+        WHEN e.id IS NOT NULL AND e.employee_status != 'Уволен' THEN CONCAT(LPAD(e.id, 3, '0'), '-', e.surname, ' ', LEFT(e.name, 1), '.', LEFT(e.patronymic, 1), '.')
+        ELSE 'Вакансия'
+    END AS 'ID-Фамилия И.О. / Статус'
+FROM
+    positions p
+LEFT JOIN departments d ON p.department_id = d.id
+LEFT JOIN employees e ON p.id = e.position_id AND e.employee_status != 'Уволен'
+LEFT JOIN (SELECT position_id FROM employees WHERE employee_status != 'Уволен' GROUP BY position_id) as active ON p.id = active.position_id
+GROUP BY p.id, p.title, d.id, d.name, e.id
+ORDER BY p.id, e.id IS NULL;
