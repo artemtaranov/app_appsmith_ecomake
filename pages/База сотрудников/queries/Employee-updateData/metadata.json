@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T14:49:09Z"
+    "createdAt": "2023-12-14T07:19:15Z"
   },
   "id": "База сотрудников_Employee.updateData",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65772165ee3ed465f02a972a"
+  "gitSyncId": "65758b0160fc577f16863ed2_657aac733064e841dee994f9"
 }

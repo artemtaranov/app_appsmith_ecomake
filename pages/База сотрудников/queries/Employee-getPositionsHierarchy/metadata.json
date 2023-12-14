@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "База сотрудников",
-    "collectionId": "65758b0160fc577f16863efc",
+    "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,13 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T14:12:43Z"
+    "createdAt": "2023-12-14T07:19:15Z"
   },
   "id": "База сотрудников_Employee.getPositionsHierarchy",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657718db4ff2c979753d2de0"
+  "gitSyncId": "65758b0160fc577f16863ed2_657aac733064e841dee994ff"
 }

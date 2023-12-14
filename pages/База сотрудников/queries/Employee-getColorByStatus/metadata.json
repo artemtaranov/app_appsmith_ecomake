@@ -39,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T14:49:08Z"
+    "createdAt": "2023-12-14T07:19:16Z"
   },
   "id": "База сотрудников_Employee.getColorByStatus",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65772164ee3ed465f02a9719"
+  "gitSyncId": "65758b0160fc577f16863ed2_657aac733064e841dee99504"
 }

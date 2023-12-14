@@ -4,9 +4,8 @@ export default {
 	all_list: [],
 	onloadfunc(){
 		this.all_employees();
-
 		this.getPositionsHierarchy();
-		this.getIDCurrent(); 
+		this.getIDCurrent();
 	},
 
 	createEmpl(name, surname, patronymic, position_id){ 
