@@ -16,7 +16,7 @@
     "mobileRightColumn": 22,
     "animateLoading": true,
     "parentColumnSpace": 17.9375,
-    "leftColumn": 1,
+    "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "boxShadow"}
@@ -67,7 +67,7 @@
     "key": "b3q9dzygim",
     "backgroundColor": "white",
     "isDeprecated": false,
-    "rightColumn": 23,
+    "rightColumn": 24,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "ves1foklv2",
     "isVisible": true,
