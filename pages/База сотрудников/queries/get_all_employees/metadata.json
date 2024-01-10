@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n    e.*,\n\t\tCONCAT(e.surname, ' ', LEFT(e.name, 1), '.', LEFT(e.patronymic, 1), '.') AS short_name,\n    p.title AS position,\n    p.parent_id,\n    manager.id AS manager_id,\n    CONCAT(manager.surname, ' ', manager.name) AS manager_full_name,\n    manager_position.title AS manager_position\nFROM \n    employees e\nLEFT JOIN \n    positions p ON e.position_id = p.id\nLEFT JOIN \n    positions manager_position ON manager_position.id = p.parent_id\nLEFT JOIN \n    employees manager ON manager.position_id = manager_position.id\nAND manager.id = (SELECT MAX(m.id) FROM employees m WHERE m.position_id = manager_position.id);\n",
+      "body": "SELECT \n    e.*,\n\t\tCONCAT(e.surname, ' ', LEFT(e.name, 1), '.', LEFT(e.patronymic, 1), '.') AS short_name,\n    p.title AS position,\n    p.parent_id,\n    manager.id AS manager_id,\n    CONCAT(manager.surname, ' ', manager.name) AS manager_full_name,\n    manager_position.title AS manager_position\nFROM \n    employees e\nLEFT JOIN \n    positions p ON e.position_id = p.id\nLEFT JOIN \n    positions manager_position ON manager_position.id = p.parent_id\nLEFT JOIN \n    employees manager ON manager.position_id = manager_position.id\nAND manager.id = (SELECT MAX(m.id) FROM employees m WHERE m.position_id = manager_position.id AND m.employee_status<>\"Уволен\");\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

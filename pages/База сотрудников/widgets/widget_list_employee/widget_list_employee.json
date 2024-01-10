@@ -20,6 +20,7 @@
         {"key": "defaultSelectedItem"}
     ],
     "leftColumn": 2,
+    "serverSidePagination": false,
     "enhancements": true,
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",

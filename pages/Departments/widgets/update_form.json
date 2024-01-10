@@ -57,6 +57,28 @@
                 "sourceData": "Администрация",
                 "fieldType": "Text Input"
             },
+            "customColumn2": {
+                "labelTextSize": "0.875rem",
+                "identifier": "customColumn2",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.customColumn2))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "customColumn2",
+                "isVisible": true,
+                "label": "Custom Column 2",
+                "originalIdentifier": "customColumn2",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 3,
+                "isDisabled": false,
+                "sourceData": "",
+                "fieldType": "Text Input"
+            },
             "category": {
                 "labelTextSize": "0.875rem",
                 "identifier": "category",
@@ -141,7 +163,10 @@
         {"key": "schema.__root_schema__.children.category.accentColor"},
         {"key": "schema.__root_schema__.children.parent_id.defaultValue"},
         {"key": "schema.__root_schema__.children.parent_id.borderRadius"},
-        {"key": "schema.__root_schema__.children.parent_id.accentColor"}
+        {"key": "schema.__root_schema__.children.parent_id.accentColor"},
+        {"key": "schema.__root_schema__.children.customColumn2.defaultValue"},
+        {"key": "schema.__root_schema__.children.customColumn2.borderRadius"},
+        {"key": "schema.__root_schema__.children.customColumn2.accentColor"}
     ],
     "borderWidth": "0",
     "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",

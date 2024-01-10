@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 87,
     "widgetName": "Button6",
-    "onClick": "{{Employee.updateOrgChart()}}",
+    "onClick": "{{Employee.updateOrgChart();}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

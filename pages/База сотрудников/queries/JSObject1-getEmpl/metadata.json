@@ -38,7 +38,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-10T09:55:13Z"
   },
   "id": "База сотрудников_JSObject1.getEmpl",
   "deleted": false,

@@ -406,7 +406,7 @@
                 "boxShadow": "none",
                 "minDate": "1920-12-31T18:30:00.000Z",
                 "dateFormat": "YYYY-MM-DD",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.birth_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONFormEmployees_general.sourceData, JSONFormEmployees_general.formData, JSONFormEmployees_general.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.birth_date))(JSONFormEmployees_sensitive.sourceData, JSONFormEmployees_sensitive.formData, JSONFormEmployees_sensitive.fieldState)}}",
                 "accessor": "birth_date",
                 "shortcuts": false,
                 "convertToISO": false,

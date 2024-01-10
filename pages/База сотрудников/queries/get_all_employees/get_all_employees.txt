@@ -14,4 +14,4 @@ LEFT JOIN
     positions manager_position ON manager_position.id = p.parent_id
 LEFT JOIN 
     employees manager ON manager.position_id = manager_position.id
-AND manager.id = (SELECT MAX(m.id) FROM employees m WHERE m.position_id = manager_position.id);
+AND manager.id = (SELECT MAX(m.id) FROM employees m WHERE m.position_id = manager_position.id AND m.employee_status<>"Уволен");
