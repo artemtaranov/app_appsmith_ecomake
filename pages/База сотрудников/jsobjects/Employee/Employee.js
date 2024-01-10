@@ -122,8 +122,10 @@ export default {
 		update_employee.run({id:Employee.getCurrent('id'), data: combinedObject}).then(function(){
 			Employee.all_employees();
 			showAlert('Изменения сохранены');
-
+			UpdateOrgStructure.run();
+			UpdateSheetDBEmployee.run();
 		});
+
 	},
 	updatePosition(){
 
@@ -131,7 +133,8 @@ export default {
 			Employee.all_employees();
 
 			showAlert('Изменения сохранены');
-
+			UpdateOrgStructure.run();
+			UpdateSheetDBEmployee.run();
 		})
 	},
 

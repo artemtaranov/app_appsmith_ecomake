@@ -259,7 +259,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 97,
+    "originalBottomRow": 5,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -1364,7 +1364,7 @@
         {"key": "schema.__root_schema__.children.dismissal_date.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 5,
+    "bottomRow": 97,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "",

@@ -20,6 +20,7 @@
         {"key": "defaultSelectedItem"}
     ],
     "leftColumn": 2,
+    "serverSidePagination": false,
     "enhancements": true,
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -27,7 +28,7 @@
         "widgetName": "Canvas1",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 700,
+        "bottomRow": 710,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -93,7 +94,7 @@
     "widgetName": "widget_list_employee",
     "listData": "{{Employee.list_all_employees(search_employee_text.text, status_employee.selectedOptionValues)}}",
     "displayName": "List",
-    "bottomRow": 78,
+    "bottomRow": 79,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 6,
