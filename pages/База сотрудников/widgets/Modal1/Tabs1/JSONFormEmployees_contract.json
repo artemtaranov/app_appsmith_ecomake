@@ -6,7 +6,7 @@
     "topRow": 1,
     "type": "JSON_FORM_WIDGET",
     "animateLoading": true,
-    "leftColumn": 1,
+    "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "boxShadow"},
@@ -259,7 +259,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 5,
+    "originalBottomRow": 97,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -1378,7 +1378,7 @@
     "key": "72yek3zbyj",
     "backgroundColor": "#fff",
     "isDeprecated": false,
-    "rightColumn": 62,
+    "rightColumn": 63,
     "widgetId": "aqfxfihu5s",
     "minWidth": 450,
     "parentId": "7ssbzzalq6",
