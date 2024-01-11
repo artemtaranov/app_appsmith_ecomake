@@ -163,7 +163,7 @@
     ],
     "showReset": false,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": false,
     "resetButtonStyles": {
         "boxShadow": "none",
@@ -259,7 +259,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 97,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -1387,7 +1386,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 1,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4
