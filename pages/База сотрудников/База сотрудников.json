@@ -28,6 +28,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "База сотрудников_Employee.getPositionsHierarchy",
+              "name": "Employee.getPositionsHierarchy",
+              "collectionId": "65758b0160fc577f16863efc",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  try {\n    const res = await list_positions.run();\n    if (res && res.length > 0) {\n      const buildHierarchy = (positions, parentId = null) => {\n        return positions.filter(position => position.parent_id === parentId).map(position => ({\n          label: position.title,\n          value: position.id,\n          children: buildHierarchy(positions, position.id)\n        }));\n      };\n      return buildHierarchy(res);\n    } else {\n      console.error('No data received or data format is incorrect');\n      return [];\n    }\n  } catch (error) {\n    console.error('Error fetching position hierarchy:', error);\n    return [];\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "База сотрудников_JSObject1.getEnumValuesEmployees",
               "name": "JSObject1.getEnumValuesEmployees",
               "collectionId": "База сотрудников_JSObject1",
@@ -37,28 +48,13 @@
                 "async function () {\n  try {\n    const res = await get_enum_list.run({\n      db: \"ecomake\"\n    });\n    console.log(res);\n    if (res && res.length > 0) {\n      JSObject1.myVar1 = res.reduce((acc, {TABLE_NAME, COLUMN_NAME, enum_values}) => {\n        let enumValues = enum_values.replace(/^enum\\('/, \"\").replace(/'\\)$/, \"\").split(\"','\");\n        if (!acc[TABLE_NAME]) {\n          acc[TABLE_NAME] = {};\n        }\n        acc[TABLE_NAME][COLUMN_NAME] = enumValues.map(value => ({\n          label: value,\n          value: value\n        }));\n        return acc;\n      }, {});\n      console.log(JSObject1.myVar1);\n      return JSObject1.myVar1;\n    } else {\n      console.error('No data received or data format is incorrect');\n      return {};\n    }\n  } catch (error) {\n    console.error('Error fetching enum values:', error);\n    return {};\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "База сотрудников_list_employee_status",
               "name": "list_employee_status",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "База сотрудников_Employee.onloadfunc",
-              "name": "Employee.onloadfunc",
-              "collectionId": "База сотрудников_Employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function () {\n  Employee.all_employees();\n  Employee.getPositionsHierarchy();\n  Employee.getIDCurrent();\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

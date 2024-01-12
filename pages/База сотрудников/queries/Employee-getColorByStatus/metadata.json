@@ -14,9 +14,9 @@
       "userPermissions": []
     },
     "pageId": "База сотрудников",
-    "collectionId": "База сотрудников_Employee",
+    "collectionId": "65758b0160fc577f16863efc",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -38,10 +38,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-14T07:19:16Z"
+    "userPermissions": []
   },
   "id": "База сотрудников_Employee.getColorByStatus",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657aac733064e841dee99504"
+  "gitSyncId": "65758b0160fc577f16863ed2_657718894ff2c979753d2ddb"
 }
