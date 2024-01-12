@@ -67,16 +67,43 @@
                     "widgetId": "lnxpg77udz",
                     "index": 1,
                     "id": "menuItem9ziijih42d",
-                    "label": "Контракт",
+                    "label": "Трудоустройство",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemjoqrxggf1s": {
+                    "onClick": "{{showModal('Modal_System');}}",
+                    "widgetId": "aiugu8y5dm",
+                    "index": 3,
+                    "id": "menuItemjoqrxggf1s",
+                    "label": "Системная",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemtsnpj15h0e": {
+                    "onClick": "{{showModal('Modal_Orgstructure');}}",
+                    "widgetId": "nxjg7gp21a",
+                    "index": 4,
+                    "id": "menuItemtsnpj15h0e",
+                    "label": "Орг.структура",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemohlzzvjq8i": {
+                    "onClick": "{{showModal('Modal_Personal');}}",
+                    "widgetId": "rpxahlr9s7",
+                    "index": 2,
+                    "id": "menuItemohlzzvjq8i",
+                    "label": "Персональная",
                     "isDisabled": false,
                     "isVisible": true
                 },
                 "menuItemem2tc9n5es": {
-                    "onClick": "{{showModal('Modal1');}}",
+                    "onClick": "{{showModal('Modal_General');}}",
                     "widgetId": "z0zhkfjqti",
                     "index": 0,
                     "id": "menuItemem2tc9n5es",
-                    "label": "Все",
+                    "label": "Основная",
                     "isDisabled": false,
                     "isVisible": true
                 }
@@ -98,7 +125,10 @@
         {"key": "groupButtons.groupButton2.onClick"},
         {"key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"},
         {"key": "groupButtons.groupButton2.menuItems.menuItem9ziijih42d.onClick"},
-        {"key": "groupButtons.groupButton2.menuItems.menuItemem2tc9n5es.onClick"}
+        {"key": "groupButtons.groupButton2.menuItems.menuItemem2tc9n5es.onClick"},
+        {"key": "groupButtons.groupButton2.menuItems.menuItemtsnpj15h0e.onClick"},
+        {"key": "groupButtons.groupButton2.menuItems.menuItemjoqrxggf1s.onClick"},
+        {"key": "groupButtons.groupButton2.menuItems.menuItemohlzzvjq8i.onClick"}
     ],
     "leftColumn": 40,
     "dynamicBindingPathList": [
