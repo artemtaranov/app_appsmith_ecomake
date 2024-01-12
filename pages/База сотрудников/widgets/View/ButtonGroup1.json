@@ -57,11 +57,30 @@
         },
         "groupButton2": {
             "onClick": "{{showModal('Modal1');}}",
-            "buttonType": "SIMPLE",
+            "buttonType": "MENU",
             "iconName": "edit",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
-            "menuItems": {},
+            "menuItems": {
+                "menuItem9ziijih42d": {
+                    "onClick": "{{showModal('Modal_Contract');}}",
+                    "widgetId": "lnxpg77udz",
+                    "index": 1,
+                    "id": "menuItem9ziijih42d",
+                    "label": "Контракт",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemem2tc9n5es": {
+                    "onClick": "{{showModal('Modal1');}}",
+                    "widgetId": "z0zhkfjqti",
+                    "index": 0,
+                    "id": "menuItemem2tc9n5es",
+                    "label": "Все",
+                    "isDisabled": false,
+                    "isVisible": true
+                }
+            },
             "index": 1,
             "label": "Изменить",
             "id": "groupButton2",
@@ -77,7 +96,9 @@
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"}
+        {"key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"},
+        {"key": "groupButtons.groupButton2.menuItems.menuItem9ziijih42d.onClick"},
+        {"key": "groupButtons.groupButton2.menuItems.menuItemem2tc9n5es.onClick"}
     ],
     "leftColumn": 40,
     "dynamicBindingPathList": [
