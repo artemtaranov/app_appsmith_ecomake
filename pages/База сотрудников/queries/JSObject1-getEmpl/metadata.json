@@ -16,7 +16,7 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_JSObject1",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -38,10 +38,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-10T09:55:13Z"
+    "userPermissions": []
   },
   "id": "База сотрудников_JSObject1.getEmpl",
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b9a373f83140ba2dc0"
+  "gitSyncId": "65758b0160fc577f16863ed2_65a13ac8d955681db9dc4fe0"
 }

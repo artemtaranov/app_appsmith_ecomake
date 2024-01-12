@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "База сотрудников",
-    "collectionId": "База сотрудников_Employee",
+    "collectionId": "65758b0160fc577f16863efc",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-14T07:19:15Z"
+    "createdAt": "2023-12-11T14:40:52Z"
   },
   "id": "База сотрудников_Employee.getValueOrDefault",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657aac733064e841dee994f2"
+  "gitSyncId": "65758b0160fc577f16863ed2_65771f744ff2c979753d2deb"
 }

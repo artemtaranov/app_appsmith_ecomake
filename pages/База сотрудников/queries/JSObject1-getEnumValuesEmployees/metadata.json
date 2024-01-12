@@ -31,13 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-10T10:57:34Z"
+    "createdAt": "2024-01-12T13:12:40Z"
   },
   "id": "База сотрудников_JSObject1.getEnumValuesEmployees",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_6575999e60fc577f16863f3e"
+  "gitSyncId": "65758b0160fc577f16863ed2_65a13ac8d955681db9dc4fe2"
 }
