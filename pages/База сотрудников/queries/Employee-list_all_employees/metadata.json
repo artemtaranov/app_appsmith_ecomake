@@ -41,7 +41,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-14T07:19:00Z"
   },
   "id": "База сотрудников_Employee.list_all_employees",
   "deleted": false,

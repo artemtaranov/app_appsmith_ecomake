@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getEmpl",
-    "fullyQualifiedName": "JSObject1.getEmpl",
+    "name": "createEmpl",
+    "fullyQualifiedName": "Employee.createEmpl",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "База сотрудников",
-    "collectionId": "База сотрудников_JSObject1",
+    "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
       "timeoutInMillisecond": 0,
       "paginationType": "NONE",
@@ -22,7 +22,16 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "data"
+          "name": "name"
+        },
+        {
+          "name": "surname"
+        },
+        {
+          "name": "patronymic"
+        },
+        {
+          "name": "position_id"
         }
       ]
     },
@@ -38,9 +47,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-01-17T19:33:59Z"
   },
-  "id": "База сотрудников_JSObject1.getEmpl",
+  "id": "База сотрудников_Employee.createEmpl",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65a13ac8d955681db9dc4fe0"
+  "gitSyncId": "65758b0160fc577f16863ed2_65a82ba7a87751674b927f5c"
 }

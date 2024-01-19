@@ -2,11 +2,11 @@
   "pages": [
     {
       "id": "Page1",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "База сотрудников",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Departments",
