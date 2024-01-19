@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "База сотрудников",
     "slug": "",
+    "customSlug": "registry-employee",
     "layouts": [
       {
         "viewMode": false,
