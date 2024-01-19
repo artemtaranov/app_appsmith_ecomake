@@ -31,7 +31,7 @@
             {
               "id": "База сотрудников_Employee.getPositionsHierarchy",
               "name": "Employee.getPositionsHierarchy",
-              "collectionId": "65758b0160fc577f16863efc",
+              "collectionId": "База сотрудников_Employee",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
