@@ -38,7 +38,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-13T13:53:15Z"
   },
   "id": "Departments_InsertQuery",
   "deleted": false,

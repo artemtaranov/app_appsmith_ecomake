@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-13T13:56:01Z"
   },
   "id": "Positions_DeleteQuery",
   "deleted": false,

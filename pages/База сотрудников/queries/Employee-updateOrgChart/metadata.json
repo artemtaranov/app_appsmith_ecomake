@@ -16,7 +16,7 @@
     "pageId": "База сотрудников",
     "collectionId": "База сотрудников_Employee",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-13T13:28:53Z"
+    "createdAt": "2024-01-19T11:57:47Z"
   },
   "id": "База сотрудников_Employee.updateOrgChart",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_6579b1952d232541f757c38a"
+  "gitSyncId": "65758b0160fc577f16863ed2_65aa63bbc4b6fd6f45765ad2"
 }
