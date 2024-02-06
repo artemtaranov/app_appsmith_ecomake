@@ -36,13 +36,13 @@
     "rightColumn": 29,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "8fc5t4b2z5",
+    "widgetId": "on06859pf4",
     "minWidth": 450,
     "isVisible": "{{Switch1.isSwitchedOn}}",
     "fontStyle": "",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "1isbz20t65",
+    "parentId": "aksm7fgx3v",
     "tags": [
         "Suggested",
         "Content"

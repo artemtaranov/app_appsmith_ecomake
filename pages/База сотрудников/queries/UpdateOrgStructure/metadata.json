@@ -3,6 +3,7 @@
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
     "name": "UpdateOrgStructure",
+    "fullyQualifiedName": "UpdateOrgStructure",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -48,9 +49,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-14T20:02:00Z"
+    "createdAt": "2024-02-06T07:25:02Z"
   },
   "id": "База сотрудников_UpdateOrgStructure",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657b5f383064e841dee9956e"
+  "gitSyncId": "65758b0160fc577f16863ed2_2024-02-06T07:25:02.185781695Z"
 }

@@ -3,6 +3,7 @@
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
     "name": "update_employee_position",
+    "fullyQualifiedName": "update_employee_position",
     "datasource": {
       "name": "Mariadb Ecomake",
       "pluginId": "mysql-plugin",
@@ -43,9 +44,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-10T14:27:28Z"
+    "createdAt": "2024-02-06T07:25:02Z"
   },
   "id": "База сотрудников_update_employee_position",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_6575cad060fc577f16863f60"
+  "gitSyncId": "65758b0160fc577f16863ed2_2024-02-06T07:25:02.185589840Z"
 }

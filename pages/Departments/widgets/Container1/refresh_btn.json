@@ -20,8 +20,8 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "leftColumn": 60,
     "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "buttonColor"}
+        {"key": "buttonColor"},
+        {"key": "borderRadius"}
     ],
     "buttonVariant": "PRIMARY",
     "isDisabled": false

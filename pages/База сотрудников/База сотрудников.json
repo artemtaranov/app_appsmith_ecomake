@@ -2,7 +2,6 @@
   "unpublishedPage": {
     "name": "База сотрудников",
     "slug": "",
-    "customSlug": "registry-employee",
     "layouts": [
       {
         "viewMode": false,
@@ -16,17 +15,27 @@
           "topRow": 0,
           "bottomRow": 910,
           "containerStyle": "none",
-          "snapRows": 83,
+          "snapRows": 110,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 87,
-          "minHeight": 850,
+          "version": 88,
+          "minHeight": 1120,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "База сотрудников_list_employee_status",
+              "name": "list_employee_status",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "База сотрудников_JSObject1.getEnumValuesEmployees",
@@ -37,14 +46,6 @@
               "jsonPathKeys": [
                 "async function () {\n  try {\n    const res = await get_enum_list.run({\n      db: \"ecomake\"\n    });\n    console.log(res);\n    if (res && res.length > 0) {\n      JSObject1.myVar1 = res.reduce((acc, {TABLE_NAME, COLUMN_NAME, enum_values}) => {\n        let enumValues = enum_values.replace(/^enum\\('/, \"\").replace(/'\\)$/, \"\").split(\"','\");\n        if (!acc[TABLE_NAME]) {\n          acc[TABLE_NAME] = {};\n        }\n        acc[TABLE_NAME][COLUMN_NAME] = enumValues.map(value => ({\n          label: value,\n          value: value\n        }));\n        return acc;\n      }, {});\n      console.log(JSObject1.myVar1);\n      return JSObject1.myVar1;\n    } else {\n      console.error('No data received or data format is incorrect');\n      return {};\n    }\n  } catch (error) {\n    console.error('Error fetching enum values:', error);\n    return {};\n  }\n}"
               ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "База сотрудников_list_employee_status",
-              "name": "list_employee_status",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
@@ -75,5 +76,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "65454d4cfee2632516ef478c_6560a9b8a373f83140ba2db3"
+  "gitSyncId": "65758b0160fc577f16863ed2_65c1dec550647b562a5fd3c8"
 }
