@@ -20,20 +20,31 @@
             "iconName": "more",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
-            "menuItems": {"menuItem3": {
-                "backgroundColor": "#DD4B34",
-                "onClick": "",
-                "iconName": "cross",
-                "widgetId": "",
-                "iconColor": "#FFFFFF",
-                "iconAlign": "right",
-                "index": 0,
-                "label": "Уволить",
-                "id": "menuItem3",
-                "isVisible": true,
-                "isDisabled": false,
-                "textColor": "#FFFFFF"
-            }},
+            "menuItems": {
+                "menuItem42icqucqsr": {
+                    "onClick": "{{navigateTo('База сотрудников v30', {\n \"id\": widget_list_employee.selectedItem.id,\n}, 'SAME_WINDOW');}}",
+                    "widgetId": "v6ypuslqqf",
+                    "index": 1,
+                    "id": "menuItem42icqucqsr",
+                    "label": "Menu Item 1",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItem3": {
+                    "backgroundColor": "#DD4B34",
+                    "onClick": "",
+                    "iconName": "cross",
+                    "widgetId": "",
+                    "iconColor": "#FFFFFF",
+                    "iconAlign": "right",
+                    "index": 0,
+                    "label": "Уволить",
+                    "id": "menuItem3",
+                    "isVisible": true,
+                    "isDisabled": false,
+                    "textColor": "#FFFFFF"
+                }
+            },
             "index": 2,
             "label": "",
             "id": "groupButton3",
@@ -128,7 +139,8 @@
         {"key": "groupButtons.groupButton2.menuItems.menuItemem2tc9n5es.onClick"},
         {"key": "groupButtons.groupButton2.menuItems.menuItemtsnpj15h0e.onClick"},
         {"key": "groupButtons.groupButton2.menuItems.menuItemjoqrxggf1s.onClick"},
-        {"key": "groupButtons.groupButton2.menuItems.menuItemohlzzvjq8i.onClick"}
+        {"key": "groupButtons.groupButton2.menuItems.menuItemohlzzvjq8i.onClick"},
+        {"key": "groupButtons.groupButton3.menuItems.menuItem42icqucqsr.onClick"}
     ],
     "leftColumn": 40,
     "dynamicBindingPathList": [
@@ -141,11 +153,11 @@
     "orientation": "horizontal",
     "isDeprecated": false,
     "rightColumn": 64,
-    "widgetId": "3qu7hkre5x",
+    "widgetId": "vqdsse2vz2",
     "minWidth": 450,
     "isVisible": true,
     "version": 1,
-    "parentId": "b6acj9f3xc",
+    "parentId": "ptw42ovp58",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

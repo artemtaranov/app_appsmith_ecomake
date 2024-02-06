@@ -3,6 +3,7 @@
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
     "name": "UpdateSheetDBEmployee",
+    "fullyQualifiedName": "UpdateSheetDBEmployee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -49,9 +50,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-01-10T18:27:32Z"
+    "createdAt": "2024-02-06T07:25:02Z"
   },
   "id": "База сотрудников_UpdateSheetDBEmployee",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_659ee194d955681db9dc4f44"
+  "gitSyncId": "65758b0160fc577f16863ed2_2024-02-06T07:25:02.186111064Z"
 }

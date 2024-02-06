@@ -3,6 +3,7 @@
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
     "name": "new_employee",
+    "fullyQualifiedName": "new_employee",
     "datasource": {
       "name": "Mariadb Ecomake",
       "pluginId": "mysql-plugin",
@@ -45,9 +46,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-11T13:42:13Z"
+    "createdAt": "2024-02-06T07:25:02Z"
   },
   "id": "База сотрудников_new_employee",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_657711b54ff2c979753d2dd0"
+  "gitSyncId": "65758b0160fc577f16863ed2_2024-02-06T07:25:02.185718603Z"
 }

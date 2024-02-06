@@ -10,7 +10,7 @@
         "label"
     ],
     "topRow": 9,
-    "bottomRow": 14,
+    "bottomRow": 13,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -36,13 +36,13 @@
     "rightColumn": 25,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "nnb8a6rsv3",
+    "widgetId": "m6i8u2njh3",
     "minWidth": 450,
     "isVisible": "{{Switch1.isSwitchedOn}}",
     "fontStyle": "",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "1isbz20t65",
+    "parentId": "aksm7fgx3v",
     "tags": [
         "Suggested",
         "Content"

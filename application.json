@@ -5,16 +5,16 @@
       "isDefault": false
     },
     {
-      "id": "База сотрудников",
-      "isDefault": true
-    },
-    {
       "id": "Departments",
       "isDefault": false
     },
     {
       "id": "Positions",
       "isDefault": false
+    },
+    {
+      "id": "База сотрудников",
+      "isDefault": true
     }
   ],
   "viewMode": false,

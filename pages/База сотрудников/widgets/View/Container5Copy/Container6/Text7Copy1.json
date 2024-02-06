@@ -41,13 +41,13 @@
     "rightColumn": 64,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "fogxxukk4q",
+    "widgetId": "evbmu65te9",
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "",
     "textColor": "{{Employee.getCurrent('dismissal_date',false)?\"#ff0000\":\"\"}}",
     "version": 1,
-    "parentId": "96bmu18bmm",
+    "parentId": "vo6lwmmqo5",
     "tags": [
         "Suggested",
         "Content"

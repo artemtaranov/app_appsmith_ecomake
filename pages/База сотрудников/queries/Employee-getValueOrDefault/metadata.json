@@ -42,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-01-19T11:57:46Z"
+    "createdAt": "2024-02-06T07:25:09Z"
   },
   "id": "База сотрудников_Employee.getValueOrDefault",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_65aa63bac4b6fd6f45765abe"
+  "gitSyncId": "65758b0160fc577f16863ed2_65c1ded550647b562a5fd3ec"
 }

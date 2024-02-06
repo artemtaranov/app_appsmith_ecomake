@@ -35,13 +35,13 @@
     "rightColumn": 61,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "na1sj01q4b",
+    "widgetId": "bmlg6ns0ql",
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "BOLD",
     "textColor": "{{Employee.getColorByStatus(Employee.getCurrent('employee_status'))}}",
     "version": 1,
-    "parentId": "b6acj9f3xc",
+    "parentId": "ptw42ovp58",
     "tags": [
         "Suggested",
         "Content"

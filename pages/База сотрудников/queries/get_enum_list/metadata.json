@@ -3,6 +3,7 @@
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
     "name": "get_enum_list",
+    "fullyQualifiedName": "get_enum_list",
     "datasource": {
       "name": "Mariadb Ecomake",
       "pluginId": "mysql-plugin",
@@ -42,9 +43,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-10T10:55:48Z"
+    "createdAt": "2024-02-06T07:25:02Z"
   },
   "id": "База сотрудников_get_enum_list",
   "deleted": false,
-  "gitSyncId": "65758b0160fc577f16863ed2_6575993460fc577f16863f3c"
+  "gitSyncId": "65758b0160fc577f16863ed2_2024-02-06T07:25:02.185190758Z"
 }
